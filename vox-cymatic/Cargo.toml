@@ -1,0 +1,9 @@
+[package]
+name = "vox-cymatic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+babel-core = { path = "../babel-core" }
+bevy = "0.12"
+ndarray = "0.15"
