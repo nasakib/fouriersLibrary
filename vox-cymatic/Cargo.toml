@@ -7,3 +7,5 @@ edition = "2021"
 babel-core = { path = "../babel-core" }
 bevy = "0.12"
 ndarray = "0.15"
+rand = "0.8"
+num-complex = "0.4"

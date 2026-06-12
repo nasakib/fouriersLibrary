@@ -4,6 +4,11 @@ An open-source, decentralized, voxel-based universe mapping the Library of Babel
 
 ---
 
+## Ecosystem Connectome Integration
+Codex Babel serves as the **Companion R&D Visualization Engine** for Vector Core Holdings. It utilizes `connectome_listener` to subscribe to **Harmonic State Vectors** output by `babelForge`. It dynamically translates these mathematical representations of local, physical grids into visible voxel-cymatic architecture, allowing users to intuitively navigate and "see" real-world resource flows.
+
+---
+
 ## 🌌 Core Mathematical Paradigm
 
 Instead of storing static text blocks or physical voxel data, the coordinates in Codex Babel represent vectors in the spatial frequency domain ($K$-Space). Any client node can deterministically reconstruct local spatial structures and readable text matrices by running an Inverse Fast Fourier Transform (IFFT) over a local frequency grid.
