@@ -20,7 +20,7 @@ pub enum TippingInstruction {
         min_harmony_threshold: u8, 
     },
     /// Community Drop (Batch Tip)
-    BatchTip {
+    CommunityDrop {
         /// Amount of lamports to tip per creator
         amount_per_creator: u64,
         /// Number of creators to tip (passed via accounts)
@@ -80,7 +80,7 @@ pub fn process_instruction(
 
             msg!("Tip transferred successfully! Shared Wealth Generation empowered.");
         },
-        TippingInstruction::BatchTip { amount_per_creator, creator_count } => {
+        TippingInstruction::CommunityDrop { amount_per_creator, creator_count } => {
             msg!("Initiating Community Drop: {} lamports to {} creators", amount_per_creator, creator_count);
             
             for _ in 0..creator_count {
