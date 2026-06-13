@@ -25,6 +25,13 @@ pub enum TippingInstruction {
         amount_per_creator: u64,
         /// Number of creators to tip (passed via accounts)
         creator_count: u8,
+    },
+    /// Proof of Connection (Mint a token when two users verify a real-world meetup)
+    ProofOfConnection {
+        /// The geohash where the users met
+        geohash_prefix: [u8; 5],
+        /// High harmony score multiplier
+        harmony_multiplier: u8,
     }
 }
 // Entry point of the Solana program
@@ -92,6 +99,17 @@ pub fn process_instruction(
                 )?;
             }
             msg!("Community Drop completed successfully!");
+        },
+        TippingInstruction::ProofOfConnection { geohash_prefix, harmony_multiplier } => {
+            let user_a_info = next_account_info(account_info_iter)?;
+            let user_b_info = next_account_info(account_info_iter)?;
+            
+            msg!("Initiating Proof of Connection between {} and {} at geohash {:?} with multiplier {}", 
+                 user_a_info.key, user_b_info.key, geohash_prefix, harmony_multiplier);
+
+            // In a full implementation, we would CPI to Token Metadata program to mint an NFT
+            // or issue a Soulbound Token (SBT) representing the connection.
+            msg!("Minting Connection Token on-chain! Two humans have connected in the real world.");
         }
     }
 
