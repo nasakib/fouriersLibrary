@@ -60,14 +60,14 @@ impl KSpaceGenerator {
     /// The coordinates generated are u_0 + i, v_0 + j, w_0 + k for i, j, k in [0, n).
     pub fn generate_grid(&self, center: (i64, i64, i64), n: usize) -> Array3<Complex64> {
         let (u0, v0, w0) = center;
-        let mut grid = Array3::from_elem((n, n, n), Complex64::new(0.0, 0.0, 0.0));
+        let mut grid = Array3::from_elem((n, n, n), Complex64::new(0.0, 0.0));
 
         for i in 0..n {
             for j in 0..n {
                 for k in 0..n {
-                    let u = u0 + i as i64;
-                    let v = v0 + j as i64;
-                    let w = w0 + k as i64;
+                    let u = u0.wrapping_add(i as i64);
+                    let v = v0.wrapping_add(j as i64);
+                    let w = w0.wrapping_add(k as i64);
                     grid[[i, j, k]] = self.evaluate_frequency(u, v, w);
                 }
             }

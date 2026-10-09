@@ -3,5 +3,5 @@ resolver = "2"
 members = [
     "babel-core",
     "vox-cymatic",
-    "signal-protocol",
+    "signal-protocol", "solana-tipping",
 ]
