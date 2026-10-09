@@ -1,114 +1,112 @@
-# Codex Babel (fouriersLibrary)
+# Codex Babel · The Symbiotic Truth Engine (`fouriersLibrary`)
 
-An open-source, decentralized, voxel-based universe mapping the Library of Babel through the spatial frequency domain ($K$-Space).
-
----
-
-## Ecosystem Connectome Integration
-Codex Babel serves as the **Companion R&D Visualization Engine** for Vector Core Holdings. It utilizes `connectome_listener` to subscribe to **Harmonic State Vectors** output by `babelForge`. It dynamically translates these mathematical representations of local, physical grids into visible voxel-cymatic architecture, allowing users to intuitively navigate and "see" real-world resource flows.
-
----
-
-## 🌌 Core Mathematical Paradigm
-
-Instead of storing static text blocks or physical voxel data, the coordinates in Codex Babel represent vectors in the spatial frequency domain ($K$-Space). Any client node can deterministically reconstruct local spatial structures and readable text matrices by running an Inverse Fast Fourier Transform (IFFT) over a local frequency grid.
+An open-source, decentralized, spatial computing engine and ledger mapping mathematical physics, $K$-Space frequency transforms, and formal logical satisfiability into interactive 3D topological geometries.
 
 ```
-                  ┌─────────────────────────────────┐
-                  │      K-Space Coordinate         │
-                  │      vec(C) = (u, v, w)         │
-                  └────────────────┬────────────────┘
-                                   │
-                                   ▼
-                  ┌─────────────────────────────────┐
-                  │ Deterministic Spectrum Generator │
-                  │       (ChaCha8 + LSH Phase)     │
-                  └────────────────┬────────────────┘
-                                   │
-                                   ▼
-                  ┌─────────────────────────────────┐
-                  │    Frequency Grid F(u, v, w)     │
-                  │         (Complex Array)         │
-                  └────────────────┬────────────────┘
-                                   │
-                                   ▼
-                  ┌─────────────────────────────────┐
-                  │    3D Inverse FFT (IFFT_3D)     │
-                  │      f(x,y,z) = IFFT{F}         │
-                  └────────────────┬────────────────┘
-                                   │
-                                   ▼
-                  ┌─────────────────┴────────────────┐
-                  │     Decoded Spatial Voxel        │
-                  │  Amplitude -> Visual Intensity   │
-                  │  Phase -> 29-Character Alphabet   │
-                  └──────────────────────────────────┘
+                             ┌───────────────────────────────────────┐
+                             │       1D Math, Physics & Logic        │
+                             │  (First Principles / Conservation)    │
+                             └──────────────────┬────────────────────┘
+                                                │
+                                                ▼
+                             ┌───────────────────────────────────────┐
+                             │          SMT Proof Engine             │
+                             │    (Microsoft Z3 Theorem Prover)      │
+                             └──────────────────┬────────────────────┘
+                                                │
+                                                ▼
+                             ┌───────────────────────────────────────┐
+                             │       Topological Graph State         │
+                             │    (NetworkX Simplicial Complexes)    │
+                             └──────────────────┬────────────────────┘
+                                                │
+                                                ▼
+                             ┌───────────────────────────────────────┐
+                             │     K-Space Frequency Domain          │
+                             │    (babel-core 3D IFFT Pipeline)      │
+                             └──────────────────┬────────────────────┘
+                                                │
+                                                ▼
+                             ┌───────────────────────────────────────┐
+                             │     Spatial Computing Viewports       │
+                             │  • Next.js 15 / R3F (Vector Lens)     │
+                             │  • Bevy Engine (vox-cymatic)          │
+                             └──────────────────┬────────────────────┘
+                                                │
+                                                ▼
+                             ┌───────────────────────────────────────┐
+                             │       Truth Anchor Consensus          │
+                             │  • signal-protocol Cryptographic Proof│
+                             │  • Supabase Reality Anchor Store      │
+                             │  • Solana Tipping / Proof-of-Meetup   │
+                             └───────────────────────────────────────┘
 ```
 
-### 1. Deterministic Frequency Generation
-Given a 3D coordinate vector $\vec{C} = (u, v, w)$ in $K$-space and a global seed, the local frequency spectrum value $F(u, v, w)$ is computed deterministically:
+---
 
-$$F(u, v, w) = F_{\text{base}}(u, v, w) \cdot e^{i \theta(u, v, w)}$$
+## 🌌 System Philosophy & Boundary Axioms
 
-Where:
-*   $F_{\text{base}}(u, v, w)$ is a complex number generated via a deterministic pseudo-random number generator (ChaCha8) seeded with the combined bytes of `seed`, $u$, $v$, and $w$.
-*   $\theta(u, v, w)$ is a slowly-varying, continuous phase field that maps large-scale harmonics.
+The Symbiotic Truth Engine operates strictly upon **First Principles** (physics, formal logic, topological mathematics). It computes and renders falsifiable topological blueprints (**The Truth Frequency**).
 
-### 2. Locality-Sensitive Hashing (LSH) & Phase Harmony
-To create navigable **Resonant Nodes** (coherent, high-amplitude text structures) and **Semantic Fault Lines** (high-entropy noise), we modulate the frequency phase with a slowly-varying harmonic field:
-
-$$\theta(u, v, w) = \left( \sin\left(\frac{u}{32}\right)\cos\left(\frac{v}{32}\right) + \sin\left(\frac{w}{32}\right)\cos\left(\frac{u}{32}\right) \right) \cdot \pi$$
-
-Because adjacent $K$-space coordinate clusters overlap significantly and share continuous phase bounds, adjacent spatial blocks exhibit high mathematical harmony, meaning spatial proximity yields semantically and statistically related text patterns.
-
-### 3. The Signal Transform
-Reconstruction of a physical voxel block is achieved by computing a 3D Inverse Fast Fourier Transform (IFFT) over the generated frequency spectrum:
-
-$$f(x, y, z) = \mathcal{F}^{-1}\{F(u, v, w)\} = \frac{1}{N^3} \sum_{u=0}^{N-1} \sum_{v=0}^{N-1} \sum_{w=0}^{N-1} F(u, v, w) \cdot e^{i 2\pi \left(\frac{ux}{N} + \frac{vy}{N} + \frac{wz}{N}\right)}$$
-
-### 4. Voxel & Linguistic Translation
-Each element $c = r + i \cdot \text{img}$ in the reconstructed spatial grid $f(x, y, z)$ is split into its physical and semantic counterparts:
-
-*   **Voxel Energy / Wave Amplitude (Magnitude):**
-    $$A = |c| = \sqrt{r^2 + \text{img}^2}$$
-    Maps to physical attributes: voxel scaling, visibility thresholding, emissive brightness, and cymatic node displacement.
-*   **Linguistic Translation (Phase Angle):**
-    $$\phi = \text{arg}(c) = \text{atan2}(\text{img}, r) \quad \in [-\pi, \pi]$$
-    Mapped uniformly to the 29-character Babel alphabet:
-    $$\text{Index} = \left\lfloor \frac{\phi + \pi}{2\pi} \cdot 29 \right\rfloor \quad \in [0, 28]$$
-    
-    The 29-character alphabet set corresponds to lowercase `a` to `z`, space ` `, comma `,`, and period `.`.
+### Core Boundaries:
+1. **Algorithmic Objectivity:** All engine constraints, graph verification steps, and solver rules evaluate solely mathematical satisfiability, physical conservation laws (Kirchhoff loop laws, continuity of mass/energy, thermodynamic bounds), and topological invariants.
+2. **Subjective & Ethical Offloading:** The engine explicitly excludes subjective preferences, moral weights, and sociopolitical value judgments from its core computational algorithms. Values and ethical objectives are strictly preserved within the human operator domain.
+3. **The Symbiotic Reality Anchor:** The engine generates structured hypotheses in physical space; the human operator conducts empirical observation and grounds the model back into reality by recording empirical deltas ($\Delta$).
 
 ---
 
-## 📦 Repository Structure
+## 🔬 Scientific Foundations & References
 
-The workspace is organized as a Cargo multi-crate project:
-
-*   **[`babel-core`](file:///c:/Users/natsa/Documents/fouriersLibrary/babel-core)**: Core Systems and Mathematical Engine. Contains 3D FFT pipelines, deterministic PRNG-based frequency generators, alphabet translation layers, and mathematical unit tests.
-*   **[`vox-cymatic`](file:///c:/Users/natsa/Documents/fouriersLibrary/vox-cymatic)**: Dynamic Client and 3D Voxel Renderer. Uses the Bevy Engine to procedurally generate meshes and colors directly from real-time spatial wave values, introducing cymatic micro-oscillations.
-*   **[`signal-protocol`](file:///c:/Users/natsa/Documents/fouriersLibrary/signal-protocol)**: P2P Consensus and State Verification Layer. Defines serialized `TruthAnchor` certificates validating discoveries mathematically across decentralized nodes.
+1. **Topological Data Analysis (TDA):**
+   *Carlsson, G. (2009). Topology and data. Bulletin of the American Mathematical Society, 46(2), 255-308.*
+   Mapping chaotic, high-entropy configuration spaces to low-dimensional geometric invariants (Betti numbers $\beta_0, \beta_1$).
+2. **Satisfiability Modulo Theories (SMT):**
+   *de Moura, L., & Bjørner, N. (2008). Z3: An efficient SMT solver. TACAS, Springer.*
+   Employing Microsoft Z3-Solver to calculate logical and physical satisfiability in real-time, physically rejecting impossible node topologies through tactile spring repulsion.
+3. **Active Inference & The Free Energy Principle:**
+   *Friston, K. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 11(2), 127-138.*
+   Minimizing prediction error via the Focus Dial entropy governor and Reality Tether feedback loop.
+4. **Pictural Formalism & ZX-Calculus:**
+   *Coecke, B., & Kissinger, A. (2017). Picturing Quantum Processes. Cambridge University Press.*
+   Natively spatial diagrammatic mathematics compiled into refractive 3D geometries.
 
 ---
 
-## 🛠️ Verification & Build Instructions
+## 📦 Consolidated Monorepo Structure
 
-Ensure you have Rust and Cargo installed.
+*   **[`frontend`](file:///c:/Users/natsa/Documents/fouriersLibrary/frontend)**: Next.js 15 (App Router), React 19, React Three Fiber (R3F), `@react-three/drei`, `@react-three/spring`, Tailwind CSS, and Zustand. Features `AmbientCanvas`, `FocusDial`, `InventoryTray`, and `RealityTether`.
+*   **[`backend`](file:///c:/Users/natsa/Documents/fouriersLibrary/backend)**: Python 3.11+ FastAPI service powering `/api/generate-noise`, `/api/tune-frequency`, `/api/truth-anchor`, and `/api/kspace-transform` using Microsoft `z3-solver` and `networkx`.
+*   **[`database`](file:///c:/Users/natsa/Documents/fouriersLibrary/database)**: Supabase PostgreSQL DDL schema with Row Level Security (`first_principles`, `topologies`, `reality_anchors`).
+*   **[`babel-core`](file:///c:/Users/natsa/Documents/fouriersLibrary/babel-core)**: High-performance Rust mathematical engine (3D IFFT, ChaCha8 PRNG, spatial frequency domain generation, and linguistic phase translation).
+*   **[`signal-protocol`](file:///c:/Users/natsa/Documents/fouriersLibrary/signal-protocol)**: Decentralized state verification layer (`TruthAnchor` cryptographic proofs) and `connectome_listener` daemon.
+*   **[`vox-cymatic`](file:///c:/Users/natsa/Documents/fouriersLibrary/vox-cymatic)**: Procedural 3D voxel renderer using Bevy Engine and custom WGSL cymatic shaders.
+*   **[`solana-tipping`](file:///c:/Users/natsa/Documents/fouriersLibrary/solana-tipping)**: Solana on-chain program for micropayment tipping, community liquidity drops, and Proof-of-Connection meetup minting.
 
-### 1. Compile Workspace
-To build all three crates concurrently:
+---
+
+## 🛠️ Verification & Quick Start
+
+### 1. Rust Mathematical Core
 ```bash
-cargo build
+cargo test -p babel-core -p signal-protocol
 ```
 
-### 2. Execute Test Suites
-To run mathematical, coordinate-sensitivity, and cryptographic consensus tests:
+### 2. SMT & Graph Backend (FastAPI + Z3)
 ```bash
-cargo test --all
+cd backend
+python -m venv .venv
+source .venv/bin/activate # or .venv\Scripts\Activate.ps1 on Windows
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
 ```
 
-### 3. Launch Voxel Client
-To run the visual Bevy client rendering the active frequency universe:
+### 3. Spatial Web Viewport (Next.js 15 + R3F)
 ```bash
-cargo run -p vox-cymatic
+cd frontend
+pnpm install
+pnpm dev
 ```
+Open [http://localhost:3000](http://localhost:3000) to enter the Vector Lens workspace.
+
+### 4. Supabase Database
+Run [`database/schema.sql`](file:///c:/Users/natsa/Documents/fouriersLibrary/database/schema.sql) in your Supabase SQL Editor.
