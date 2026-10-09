@@ -259,7 +259,7 @@ cd frontend
 pnpm install
 pnpm dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3004](http://localhost:3004) in your browser.
 
 ### 5. Supabase Database DDL
 Execute [`database/schema.sql`](file:///c:/Users/natsa/Documents/fouriersLibrary/database/schema.sql) in your Supabase SQL Editor to establish Row Level Security and seed First Principles axioms.

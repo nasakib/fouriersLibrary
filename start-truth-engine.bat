@@ -32,7 +32,7 @@ start "Vector Lens Web Frontend" cmd /k "pnpm dev"
 echo.
 echo ===================================================
 echo  Systems Active:
-echo   - Web UI:    http://localhost:3000
+echo   - Web UI:    http://localhost:3004
 echo   - SMT API:   http://localhost:8000/docs
 echo   - Rust CLI:  target\debug\truth_engine_cli.exe
 echo ===================================================
