@@ -13,3 +13,7 @@ tokio = { version = "1.28", features = ["rt-multi-thread", "macros", "time"] }
 [[bin]]
 name = "connectome_listener"
 path = "src/connectome_listener.rs"
+
+[[bin]]
+name = "truth_engine_cli"
+path = "src/cli.rs"
